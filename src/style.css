@@ -14,7 +14,7 @@ body{
 
 .app-background{
     height: 519px;
-    width: 500px;
+    width: 800px;
     background-color: #2B283A;
     display: flex;
     align-items: center;
@@ -88,5 +88,15 @@ body{
 
 .app button:hover{
     cursor: pointer;
+}
+
+.presentation{
+    color: green;
+    padding: 0.5rem;
+}
+
+.presentation a{
+    text-decoration: underline;
+    color: blue;
 }
 

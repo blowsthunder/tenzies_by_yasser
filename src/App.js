@@ -142,6 +142,10 @@ export default function App(props) {
           Roll until all dice are the same. Click each die to freeze it at its
           current value between rolls.
         </p>
+        <p className="presentation">
+          This Game was created by{" "}
+          <a href="https://abdechafik-yasser.web.app">Yasser Abdechafik</a>
+        </p>
         <h3>{winner}</h3>
         <div className="app-button">
           <div className="pad1">
