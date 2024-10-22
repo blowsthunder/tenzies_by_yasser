@@ -17,7 +17,7 @@ export default function App(props) {
     8: false,
     9: false,
   });
-
+  //Updated
   const [valueButton, setValueButton] = React.useState({
     0: 0,
     1: 1,
@@ -67,7 +67,7 @@ export default function App(props) {
         9: 9,
       });
       setStatus("roll");
-      setWinner('playing')
+      setWinner("playing");
     }
 
     // Reset the count of matching buttons when rolling again
@@ -76,8 +76,9 @@ export default function App(props) {
     setValueButton((prevValue) => {
       const newValue = {};
       for (var i = 0; i <= 9; i++) {
-        dataButton[i] ? (newValue[i] = prevValue[i]) : (newValue[i] = Math.round(Math.random() * 10))
-      ;
+        dataButton[i]
+          ? (newValue[i] = prevValue[i])
+          : (newValue[i] = Math.round(Math.random() * 10));
       }
       return newValue;
     });
@@ -137,22 +138,85 @@ export default function App(props) {
     <div className="app-background">
       <div className="app">
         <h1>Tenzies</h1>
-        <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+        <p>
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
         <h3>{winner}</h3>
         <div className="app-button">
           <div className="pad1">
-            <input style={displayColor(0, "green")} type="button" value={valueButton[0]} name="0" onClick={handleChange} />
-            <input style={displayColor(1, "green")} type="button" value={valueButton[1]} name="1" onClick={handleChange} />
-            <input style={displayColor(2, "green")} type="button" value={valueButton[2]} name="2" onClick={handleChange} />
-            <input style={displayColor(3, "green")} type="button" value={valueButton[3]} name="3" onClick={handleChange} />
-            <input style={displayColor(4, "green")} type="button" value={valueButton[4]} name="4" onClick={handleChange} />
+            <input
+              style={displayColor(0, "green")}
+              type="button"
+              value={valueButton[0]}
+              name="0"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(1, "green")}
+              type="button"
+              value={valueButton[1]}
+              name="1"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(2, "green")}
+              type="button"
+              value={valueButton[2]}
+              name="2"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(3, "green")}
+              type="button"
+              value={valueButton[3]}
+              name="3"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(4, "green")}
+              type="button"
+              value={valueButton[4]}
+              name="4"
+              onClick={handleChange}
+            />
           </div>
           <div className="pad2">
-            <input style={displayColor(5, "green")} type="button" value={valueButton[5]} name="5" onClick={handleChange} />
-            <input style={displayColor(6, "green")} type="button" value={valueButton[6]} name="6" onClick={handleChange} />
-            <input style={displayColor(7, "green")} type="button" value={valueButton[7]} name="7" onClick={handleChange} />
-            <input style={displayColor(8, "green")} type="button" value={valueButton[8]} name="8" onClick={handleChange} />
-            <input style={displayColor(9, "green")} type="button" value={valueButton[9]} name="9" onClick={handleChange} />
+            <input
+              style={displayColor(5, "green")}
+              type="button"
+              value={valueButton[5]}
+              name="5"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(6, "green")}
+              type="button"
+              value={valueButton[6]}
+              name="6"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(7, "green")}
+              type="button"
+              value={valueButton[7]}
+              name="7"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(8, "green")}
+              type="button"
+              value={valueButton[8]}
+              name="8"
+              onClick={handleChange}
+            />
+            <input
+              style={displayColor(9, "green")}
+              type="button"
+              value={valueButton[9]}
+              name="9"
+              onClick={handleChange}
+            />
           </div>
         </div>
         <p>button clicked : {buttonClicked}</p>
