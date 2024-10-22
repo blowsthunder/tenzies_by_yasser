@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;0,800;1,200;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app-background{
+    height: 519px;
+    width: 500px;
+    background-color: #2B283A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    background-color: #F5F5F5;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app h1{
+    font-family: Karla;
+}
+
+
+.app p{
+    font-family: Inter;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.app .app-button{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pad1, .pad2{
+    display: block;
+}
+
+.pad1 input, .pad2 input{
+    height: 40px;
+    width: 45px;
+    margin: 10px 10px;
+    border: none;
+    font-family: Karla;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.pad1 input, .pad2 input:hover{
+    cursor: pointer;
+}
+
+.app button{
+    height: 40px;
+    width: 30%;
+    border: none;
+    background-color: #5035FF;
+    font-family: Karla;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: lighter;
+}
+
+.app button:hover{
+    cursor: pointer;
+}
+
